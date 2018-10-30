@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Esta primera sección contiene las clases que rigen media queries mayores a 768px de ancho de ventana */
+
 .wrapper {
 	margin: 0 auto;
 	width: 900px;
@@ -175,7 +177,6 @@
 .input_box {
   margin-left: 25px;
   margin-top: -13px;
-  /*padding-top: 10px;*/
   float: left;
   width: 60px;
   height: 45px;
@@ -342,13 +343,15 @@
   color: #3e3d3f;
 }
 
+/* Aquí nos encargamos de ocultar las lineas que salen en la caja de resultados cuando estamos en modo móvil */
+
 #line1_visible{
-		display: none;
-	}
+	display: none;
+}
 	
-	#line2_visible{
-		display: none;
-	}
+#line2_visible{
+	display: none;
+}
 
 .Line_2 {
   margin-top: 20px;
@@ -413,6 +416,8 @@
   border: solid 1px #da3535;
   background-color: #ffffff;
 }
+
+/* En esta sección se definen los estilos para el modo móvil de la calculadora */
 
 @media (max-width: 768px) {
 	.wrapper {

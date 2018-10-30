@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Mortgage Calculator</title>
 	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="fonts/style.css"/>
 	
@@ -18,10 +19,15 @@
 		
 		<div class="calc">
 		
+			<!-- La clase Rectangle-35 contiene la estructura en la que se ingresan los datos para que la calculadora funcione -->
+			
 			<div class="Rectangle-35">
 				<div class="Change-values-to-cal">Change values to calculate your results</div>
 				<div class="Line"></div>
 				<div class="Years-of-mortgage">Years of mortgage</div>
+				
+				<!-- Los sliders se rigen por la clase slider_1 y cada uno alimenta las variables years_mort / rate_int del archivo script.js -->
+				<!-- en el caso del slider 2, el valor se divide en 10 para que el slider funcione correctamente con los valores solicitados -->
 				
 				<div class="slider_1">
 					<div class="numbers_1">1</div>
@@ -40,6 +46,10 @@
 					<div class="numbers_2">10</div>
 					<div class="input_box"><div id="rate_int_out" class="input_value">30</div></div>
 				</div>
+				
+				<!-- La clase self-clear limpia la funcionalidad float:left para que el siguiente elemento del DOM se ubique correctamente -->
+				<!-- Las siguientes cajas de entrada -input- reciben únicamente números y su lógica y funcionamiento se rige por medio del archivo script.js -->
+				
 				<div class="self_clear"></div>
 				<div class="Loan-Amount">Loan Ammount</div>
 				<input type="text" id="loan_ammount" class="field-normal-shadow" onKeyPress="return isNumber(event)"></input>
@@ -57,23 +67,28 @@
 	
 				<div class="self_clear"></div>
 	
+				<!-- Aquí encontramos el botón que inicia el cálculo de los valores. La función calculate() se encarga de verificar si se ingresaron valores o no. -->
+	
 				<div class="btn_calc" onClick="calculate()"><div class="btn_text">CALCULATE</div></div>
 				
 			</div>
 			
+			<!-- La sección de resultados se rige por la clase Rectangle-45 y es donde se despliegan los resultados del cálculo. -->
+			<!-- La caja se encuentra oculta en móvil y se anima por javascript. -->
+	
 			<div id="result-box" class="Rectangle-45">
 				<div class="Your-results">Your results</div>
 				<div class="separator"></div>
 				<div class="txt_results">Principle &amp; Interest</div>
-				<div class="num_result">$ - -</div>
+				<div id="principle" class="num_result">$ - -</div>
 				<div class="self_clear"></div>
 				<div id="line1_visible" class="Line_2"></div>
 				<div class="txt_results">Tax</div>
-				<div class="num_result">$ - -</div>
+				<div id="tax" class="num_result">$ - -</div>
 				<div class="self_clear"></div>
 				<div id="line2_visible" class="Line_2"></div>
 				<div class="txt_results">Insurance</div>
-				<div class="num_result">$ - -</div>
+				<div id="insurance" class="num_result">$ - -</div>
 				<div class="self_clear"></div>
 				<div class="Line_2"></div>
 				<div class="Total-Monthly-Payment">Total Monthly Payment</div>

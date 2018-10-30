@@ -1,5 +1,11 @@
+// Código Javascript que se encarga de la funcionalidad de la calculadora
+
+//Las variables years_mort y rate_int almacenan los valores inidcados por el usuario en los sliders
+
 var years_mort = 0;
 var rate_int = 0;
+
+// Aquí vemos el código que se encarga de tomar los avlores en vivo de los sliders
 
 var slider1 = document.getElementById("years_mort");
 var output1 = document.getElementById("years_mort_out");
@@ -7,26 +13,30 @@ output1.innerHTML = slider1.value;
 
 slider1.oninput = function() {
     output1.innerHTML = this.value;
-	years_mort = this.value;
+	years_mort = parseFloat(this.value);
 }
 
 var slider2 = document.getElementById("rate_int");
 var output2 = document.getElementById("rate_int_out");
-output2.innerHTML = slider2.value; 
+output2.innerHTML = slider2.value;  
 
 slider2.oninput = function() {
     output2.innerHTML = (this.value / 10);
-	rate_int = (this.value / 10);
+	rate_int = parseFloat(this.value) / 10;
 }
+
+// En el caso del slider 2 tomamos el valor que va de 1 a 100 y lo dividimos en 10 para poder dejar en decimal
+// de 0.1 a 10 para que el slider funcione de manera correcta en el html
 
 function cambiaValor(){
 	output1.innerHTML = slider1.value;
-	years_mort = this.value;
+	years_mort = parseFloat(this.value);
 	output2.innerHTML = (slider2.value / 10);
-	rate_int = (this.value / 10);
-	
-	
+	rate_int = parseFloat(this.value) / 10;
 }
+
+//isNumber() verifica que los valores ingresados en los campos input sean numéricos
+// Adicionalmente restaura la clase original de estilos cuando los campos se resaltan en rojo
 
 function isNumber(evt) {
 	var elem1;
@@ -50,6 +60,10 @@ function isNumber(evt) {
     return true;
 }
 
+// La función calculate() realiza el cálculo de los valores para arrojar los resultados correspondientes
+// Se apoya en la función validate() para verificar que existan los valores necesarios para hacer el
+// cálculo y mostrar los resultados respectivos
+
 function calculate(){
 	var loan_ammount = parseFloat(document.getElementById('loan_ammount').value);
 	var tax_ammount = parseFloat(document.getElementById('tax_ammount').value);
@@ -57,7 +71,14 @@ function calculate(){
 	
 	if(validate(loan_ammount, tax_ammount, insurance_ammount)){
 	    //Aquí se calcula el resultado
-		//document.getElementById("result").innerHTML();
+		var principle = ((rate_int / 100) / 12) * (loan_ammount / (1 - (Math.pow((1 + ((rate_int / 100)/12)),- (years_mort*12)))));
+		document.getElementById("principle").innerHTML = "$ " + principle;
+		var tax = tax_ammount/12;
+		document.getElementById("tax").innerHTML = "$ " + tax;
+		var insurance = insurance_ammount/12;
+		document.getElementById("insurance").innerHTML = "$ " + insurance;
+		var result = principle + tax + insurance;
+		document.getElementById("result").innerHTML = "$ " + insurance;
 		var w = window.innerWidth;
 		if(w <= 768){
 			document.getElementById("result-box").style.display = "block";
@@ -66,6 +87,10 @@ function calculate(){
 		}
 	}
 }
+
+// Función auxiliar de calculate() que se encarga de verificar que existan valores en los tres campos input del html
+// Retorna true si en los tres campos hay valores, de lo contrario retorna false y se encarga de resaltar
+// en rojo los campos
 
 function validate(num1, num2, num3){
 	var val1 = false;
@@ -121,6 +146,8 @@ function validate(num1, num2, num3){
 		return false;
 	}
 }
+
+//Función que anima los resultados cuando la calculadora está en modo móvil
 
 function animResults() {
   var elem = document.getElementById("result-box");   
