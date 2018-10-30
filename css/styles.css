@@ -1,0 +1,835 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.wrapper {
+	margin: 0 auto;
+	width: 900px;
+	height: 700px;
+}
+
+.H2-blue {
+  width: 654.9px;
+  height: 30px;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #005175;
+}
+
+.Rectangle-6 {
+  margin-top: 15px;
+  width: 820px;
+  height: 1px;
+  background-color: #cacaca;
+}
+
+.Rectangle-35 {
+  position: relative;
+  float: left;
+  z-index: 10;
+  margin-top: 25px;
+  margin-left: 40px;
+  width: 470px;
+  height: 522px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.Rectangle-45 {
+  position: relative;
+  margin-left: -24px;
+  margin-top: 66px;
+  float: left;
+  width: 298px;
+  height: 440px;
+  background-color: #eaf6fa;
+}
+
+.Change-values-to-cal {
+  margin-top: 34px;
+  margin-left: 39px;
+  width: 391px;
+  height: 24px;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.Line {
+  margin-top: 10.5px;
+  margin-left: 39px;
+  width: 391px;
+  height: 1px;
+  background-color: #cbcbcb;
+}
+
+.Years-of-mortgage {
+  margin-top: 35.5px;
+  margin-left: 40px;
+  width: 173px;
+  height: 17px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.Rate-of-interest {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 173px;
+  height: 17px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.numbers_1 {
+  float: left;
+  width: 10px;
+  height: 18px;
+  opacity: 0.8;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.numbers_2 {
+  margin-left: 5px;
+  float: left;
+  width: 10px;
+  height: 18px;
+  opacity: 0.8;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.slider_1 {
+  margin-top: 11px;
+  margin-left: 40px;
+  width: 400px;
+}
+
+.slider {
+  margin-top: 6px;
+  margin-left: 13px;
+  float: left;
+  position: relative;
+  z-index: 12;
+  -webkit-appearance: none;
+  width: 263px;
+  height: 8px;
+  border-radius: 5px;   
+  background: #d8d8d8;
+  outline: none;
+  -webkit-transition: .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; 
+  background: #ffffff;
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.input_box {
+  margin-left: 25px;
+  margin-top: -13px;
+  /*padding-top: 10px;*/
+  float: left;
+  width: 60px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #cacaca;
+  background-color: #ffffff;
+}
+
+.input_value {
+  margin-top: 12px;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #3e3d3f;
+}
+
+.self_clear:before{
+   clear: both;
+   display: table;
+   content: "";
+   width:100px;
+}
+
+.Loan-Amount {
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 150px;
+  height: 17px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.field-normal-shadow {
+  font-family: "Helvetica Neue";
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 365px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #a6a6a6;
+  background-color: #ffffff;
+}
+
+.tax-insurance {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.float_left{
+  float: left;
+}
+
+.Annual-Tax-Insurance {
+  width: 150px;
+  height: 17px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.field{
+  font-family: "Helvetica Neue";
+  padding-left: 25px;
+  margin-top: 5px;
+  width: 160px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #a6a6a6;
+  background-color: #ffffff;
+}
+
+.btn_calc {
+  cursor: pointer;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 390px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #0077c0;
+}
+
+.btn_text {
+  padding-top: 13px;
+  color: #FFF;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.Your-results {
+  margin-top: 36px;
+  margin-left: 66px;
+  width: 118px;
+  height: 30px;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.separator{
+	margin-top: 9px;
+}
+
+.txt_results {
+  margin-top: 20px;
+  margin-left: 68px;
+  width: 118px;
+  height: 30px;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.num_result {
+  margin-left: 68px;
+  margin-top: -5px;
+  width: 200px;
+  height: 30px;
+  opacity: 0.2;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+#line1_visible{
+		display: none;
+	}
+	
+	#line2_visible{
+		display: none;
+	}
+
+.Line_2 {
+  margin-top: 20px;
+  margin-left: 66px;
+  width: 192px;
+  height: 2px;
+  background-color: #cbcbcb;
+}
+
+.Total-Monthly-Payment {
+  margin-top: 20px;
+  margin-left: 66px;
+  width: 186px;
+  height: 30px;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.num_final {
+  margin-left: 68px;
+  margin-top: -5px;
+  width: 200px;
+  height: 30px;
+  opacity: 0.2;
+  font-family: "Helvetica Neue";
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3e3d3f;
+}
+
+.field-normal-shadow-alt {
+  font-family: "Helvetica Neue";
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 365px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #da3535;
+  background-color: #ffffff;
+}
+
+.field-alt {
+  font-family: "Helvetica Neue";
+  padding-left: 25px;
+  margin-top: 5px;
+  width: 160px;
+  height: 45px;
+  border-radius: 4px;
+  border: solid 1px #da3535;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		margin: 0 auto;
+		width: 320px;
+		height: auto;
+	}
+
+	.H2-blue {
+	  margin-top: 23px;
+	  margin-left: 20px;
+	  width: 220px;
+	  height: 24px;
+	  font-family: "Helvetica Neue";
+	  font-size: 20px;
+	  font-weight: 300;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.2;
+	  letter-spacing: 0.5px;
+	  text-align: left;
+	  color: #006ea0;
+	}
+
+	.Rectangle-6 {
+	  margin-top: 10px;
+	  margin-left: 20px;
+	  width: 300px;
+  	  height: 2px;
+	  background-color: #cacaca;
+	}
+
+	.Rectangle-35 {
+	  position: relative;
+	  float: left;
+	  z-index: 10;
+	  margin-top: 20px;
+	  margin-left: 10px;
+	  width: 300px;
+	  height: 450px;
+	  border-radius: 4px;
+	  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+	  background-color: #ffffff;
+	}
+
+	.Rectangle-45 {
+	  display: none;
+	  position: relative;
+	  margin-left: 10px;
+	  margin-top: -20px;
+	  width: 300px;
+	  height: 289px;
+	  background-color: #eaf6fa;
+	}
+
+	.Change-values-to-cal {
+	  margin-top: 15px;
+	  margin-left: 20px;
+	  width: 260px;
+	  height: 20px;
+	  font-family: "Helvetica Neue";
+	  font-size: 12px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.67;
+	  letter-spacing: 0.2px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.Line {
+	  margin-top: 5px;
+	  margin-left: 20px;
+	  width: 260px;
+	  height: 2px;
+	  background-color: #cbcbcb;
+	}
+
+	.Years-of-mortgage {
+	  margin-top: 15px;
+	  margin-left: 20px;
+	  width: 109px;
+	  height: 20px;
+	  font-family: "Helvetica Neue";
+	  font-size: 12px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.67;
+	  letter-spacing: 0.2px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.Rate-of-interest {
+	  margin-top: 18px;
+	  margin-left: 20px;
+	  width: 130px;
+	  height: 20px;
+	  font-family: "Helvetica Neue";
+	  font-size: 12px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.67;
+	  letter-spacing: 0.2px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.numbers_1 {
+	  float: left;
+	  width: 9px;
+	  height: 16px;
+	  font-family: "Helvetica Neue";
+	  font-size: 14px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: 0.3px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.numbers_2 {
+	  margin-left: 5px;
+	  float: left;
+	  width: 17px;
+	  height: 16px;
+	  font-family: "Helvetica Neue";
+	  font-size: 14px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: 0.3px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.slider_1 {
+	  margin-top: 9px;
+	  margin-left: 20px;
+	  width: 320px;
+	}
+
+	.slider {
+	  margin-top: 5px;
+	  margin-left: 15px;
+	  float: left;
+	  position: relative;
+	  z-index: 12;
+	  -webkit-appearance: none;
+	  width: 153px;
+	  height: 8px;
+	  border-radius: 5px;   
+	  background: #d8d8d8;
+	  outline: none;
+	  -webkit-transition: .2s;
+	}
+
+	.slider::-webkit-slider-thumb {
+	  -webkit-appearance: none;
+	  appearance: none;
+	  width: 24px;
+	  height: 24px;
+	  border-radius: 50%; 
+	  background: #ffffff;
+	  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.1);
+	  cursor: pointer;
+	}
+
+	.input_box {
+	  margin-left: 8px;
+	  margin-top: -13px;
+	  /*padding-top: 10px;*/
+	  float: left;
+	  width: 50px;
+	  height: 40px;
+	  border-radius: 4px;
+	  border: solid 1px #a6a6a6;
+	  background-color: #ffffff;
+	}
+
+	.input_value {
+	  margin-top: 12px;
+	  font-family: "Helvetica Neue";
+	  font-size: 14px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: 0.3px;
+	  text-align: center;
+	  color: #3e3d3f;
+	}
+
+	.self_clear:before{
+	   clear: both;
+	   display: table;
+	   content: "";
+	   width:100px;
+	}
+
+	.Loan-Amount {
+	  margin-left: 20px;
+	  margin-top: 22px;
+	  width: 89px;
+	  height: 15px;
+	  font-family: "Helvetica Neue";
+	  font-size: 12px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.field-normal-shadow {
+	  font-family: "Helvetica Neue";
+	  padding-left: 15px;
+	  margin-top: 5px;
+	  margin-left: 20px;
+	  width: 245px;
+	  height: 40px;
+	  border-radius: 4px;
+	  border: solid 1px #a6a6a6;
+	  background-color: #ffffff;
+	}
+
+	.tax-insurance {
+	  margin-top: 20px;
+	  margin-left: 20px;
+	}
+
+	.float_left{
+	  float: left;
+	}
+
+	.Annual-Tax-Insurance {
+	  width: 120px;
+	  height: 20px;
+	  font-family: "Helvetica Neue";
+	  font-size: 12px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.67;
+	  letter-spacing: 0.2px;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.field{
+	  font-family: "Helvetica Neue";
+	  padding-left: 15px;
+	  margin-top: 5px;
+	  width: 105px;
+	  height: 40px;
+	  border-radius: 4px;
+	  border: solid 1px #a6a6a6;
+	  background-color: #ffffff;
+	}
+
+	.btn_calc {
+	  cursor: pointer;
+	  margin-left: 20px;
+	  margin-top: 20px;
+	  width: 265px;
+	  height: 40px;
+	  border-radius: 4px;
+	  background-color: #0077c0;
+	}
+
+	.btn_text {
+	  padding-top: 12px;
+	  color: #FFF;
+	  font-family: "Helvetica Neue";
+	  font-size: 14px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: 0.6px;
+	  text-align: center;
+	}
+
+	.Your-results {
+	  margin-top: 40px;
+	  margin-left: 20px;
+	  width: 108px;
+	  height: 30px;
+	  font-family: "Helvetica Neue";
+	  font-size: 20px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: 1.5;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.txt_results {
+	  float: left;
+	  margin-top: 16px;
+	  margin-left: 21px;
+	  width: 150px;
+	  height: 14px;
+	  font-family: 'SF UI Display Medium';
+	  font-size: 12px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.num_result {
+	  float: left;
+	  margin-top: 16px;
+	  margin-left: 0px;
+	  width: 100px;
+	  height: 14px;
+	  opacity: 1;
+	  font-family: 'SF UI Display Medium';
+	  font-size: 14px;
+	  font-weight: 400;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: right;
+	  color: #3e3d3f;
+	}
+
+	.Line_2 {
+	  margin-top: 16px;
+	  margin-left: 20px;
+	  width: 260px;
+	  height: 2px;
+	  background-color: #cbcbcb;
+	}
+	
+	.separator{
+		margin-top: 9px;
+	}
+	
+	#line1_visible{
+		display: block;
+	}
+	
+	#line2_visible{
+		display: block;
+	}
+
+	.Total-Monthly-Payment {
+	  float: left;
+	  margin-top: 19px;
+	  margin-left: 21px;
+	  width: 150px;
+	  height: 14px;
+	  font-family: 'SF UI Display Medium';
+	  font-size: 12px;
+	  font-weight: normal;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: left;
+	  color: #3e3d3f;
+	}
+
+	.num_final {
+	  float: left;
+	  margin-top: 15px;
+	  margin-left: 0px;
+	  width: 100px;
+	  height: 14px;
+	  opacity: 1;
+	  font-family: 'SF UI Display Medium';
+	  font-size: 18px;
+	  font-weight: 400;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  text-align: right;
+	  color: #3e3d3f;
+	}
+	
+	.field-normal-shadow-alt {
+	  font-family: "Helvetica Neue";
+	  padding-left: 15px;
+	  margin-top: 5px;
+	  margin-left: 20px;
+	  width: 245px;
+	  height: 40px;
+	  border-radius: 4px;
+	  border: solid 1px #da3535;
+	  background-color: #ffffff;
+	}
+	
+	.field-alt{
+	  font-family: "Helvetica Neue";
+	  padding-left: 15px;
+	  margin-top: 5px;
+	  width: 105px;
+	  height: 40px;
+	  border-radius: 4px;
+	  border: solid 1px #da3535;
+	  background-color: #ffffff;
+	}
+}
