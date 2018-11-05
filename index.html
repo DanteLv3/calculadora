@@ -52,16 +52,22 @@
 				
 				<div class="self_clear"></div>
 				<div class="Loan-Amount">Loan Ammount</div>
+				<div class="sign_1">$</div>
 				<input type="text" id="loan_ammount" class="field-normal-shadow" onKeyPress="return isNumber(event)"></input>
+				<div id="mandTxt_1" class="mandatory_1">Mandatory field</div>
 			
 				<div class="tax-insurance">
 					<div class="float_left">
 						<div class="Annual-Tax-Insurance">Annual Tax</div>
+						<div class="sign_2">$</div>
 						<input type="text" id="tax_ammount" class="field" onKeyPress="return isNumber(event)"></input>
+						<div id="mandTxt_2" class="mandatory_2">Mandatory field</div>
 					</div>
 					<div class="float_left" style="margin-left: 20px;">
 						<div class="Annual-Tax-Insurance">Annual Insurance</div>
+						<div class="sign_2">$</div>
 						<input type="text" id="insurance_ammount" class="field" onKeyPress="return isNumber(event)"></input>
+						<div id="mandTxt_3" class="mandatory_2">Mandatory field</div>
 					</div>
 				</div>
 	
@@ -69,7 +75,7 @@
 	
 				<!-- Aquí encontramos el botón que inicia el cálculo de los valores. La función calculate() se encarga de verificar si se ingresaron valores o no. -->
 	
-				<div class="btn_calc" onClick="calculate()"><div class="btn_text">CALCULATE</div></div>
+				<div class="btn_calc" onClick="calculate()"><div id="btn_text" class="btn_text">CALCULATE</div></div>
 				
 			</div>
 			
